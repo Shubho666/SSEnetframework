@@ -93,11 +93,11 @@ namespace WebApplication12.Controllers
         }
 
         [HttpPost]
-        public int PostSSEFromValues(string lll)
+        public int PostSSEFromValues(string message)
         {
 
-            SseListenerController.MessageCallback(lll);
-            return lll.Length;
+            SseListenerController.MessageCallback(message);
+            return message.Length;
 
         }
     }
